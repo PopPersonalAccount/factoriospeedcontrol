@@ -53,7 +53,7 @@ function createHud()
 end
 
 function setSpeed(speed)
-    game.speed = math.clamp(speed, 0.5, 10)
+    game.speed = math.clamp(speed, 0.5, 25)
     for playerIndex, player in pairs(game.players) do
         if player.gui.top["btc--display"] then
             player.gui.top["btc--display"].caption = getSpeedString()
